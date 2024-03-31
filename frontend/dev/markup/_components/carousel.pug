@@ -1,0 +1,28 @@
+- var images = "./assets/images/carousel";
+
+#carouselExample.carousel.carousel-dark.slide(data-bs-ride="carousel")
+  .carousel-inner
+    .carousel-item.item.active
+      .col-lg-3
+          img.d-block(src=images+"/1.jpeg", alt="First slide")
+    .carousel-item.item
+      .col-lg-3
+          img.d-block(src=images+"/2.jpeg", alt="Second slide")
+    .carousel-item.item
+      .col-lg-3
+          img.d-block(src=images+"/3.jpeg", alt="Third slide")
+    .carousel-item.item
+      .col-lg-3
+          img.d-block(src=images+"/4.jpeg", alt="Fourth slide")
+    .carousel-item.item
+      .col-lg-3
+          img.d-block(src=images+"/5.jpeg", alt="Fifth slide")
+    .carousel-item.item
+      .col-lg-3
+          img.d-block(src=images+"/6.jpeg", alt="Sixth slide")
+  button.carousel-control-prev.d-lg-none(type="button", data-bs-target="#carouselExample", data-bs-slide="prev")
+    span.carousel-control-prev-icon(aria-hidden="true")
+    span.visually-hidden Previous
+  button.carousel-control-next.d-lg-none(type="button", data-bs-target="#carouselExample", data-bs-slide="next")
+    span.carousel-control-next-icon(aria-hidden="true")
+    span.visually-hidden Next

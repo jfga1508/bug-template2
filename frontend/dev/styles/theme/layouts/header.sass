@@ -1,0 +1,22 @@
+header
+    background-image: url(/assets/images/2e3130d914626b07ec182fc5179ca5d0.jpeg)
+    background-size: cover
+
+    @include lg 
+        background-image: none
+
+    .bg-image
+        background-image: url(/assets/images/2e3130d914626b07ec182fc5179ca5d0.jpeg)
+        background-size: cover
+
+    .row.content
+        min-height: 580px
+
+        @include lg 
+            min-height: 900px
+
+        .info
+            color: #FFF
+            @include lg 
+                color: $cp1
+                padding-left: 2rem

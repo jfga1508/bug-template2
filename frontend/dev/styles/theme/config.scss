@@ -1,0 +1,33 @@
+$cp1: #A06056;
+$cp2: #534B42;
+$cp3: #706458;
+$cp4: #121212;
+$bg1: #F3EEE8;
+
+// Add the new colors to bootstrap
+
+$theme-colors: ("primary": $cp1,"secondary": $cp2, cp2: $cp2, cp3: $cp3, cp4: $cp4);
+$link-color: $cp1;
+$link-hover-color: $cp2;
+$body-bg: $bg1;
+$progress-bg: $cp4;
+
+// Typografy
+$font-family-base: "Varta", sans-serif;
+$font-size-base: 1.125rem;
+
+// Utilities
+$utilities: (
+  "opacity": (
+    property: opacity,
+    values: (
+      0: 0,
+      25: .25,
+      45: .45,
+      50: .5,
+      75: .75,
+      90: .90,
+      100: 1,
+    )
+  )
+);

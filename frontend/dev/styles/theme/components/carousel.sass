@@ -1,0 +1,55 @@
+.carousel
+    margin: 4rem -2rem 0
+
+    &-inner
+        padding-left: calc(50% - 125px)
+
+        @include md
+            padding-left: 0
+
+    &-item
+        img 
+            width: 250px
+            height: 400px
+            gap: 0px
+            border-radius: 20px
+            opacity: 0px
+            object-fit: cover
+            margin: auto
+    &.active
+        display: flex
+
+@media (max-width: 767px)
+  .carousel-inner .carousel-item > div
+    display: none
+  .carousel-inner .carousel-item > div:first-child
+    display: block
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev
+  display: flex
+
+@include md
+
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next
+    transform: translateX(50%)
+
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev
+    transform: translateX(-50%)
+
+@include lg
+
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next
+    transform: translateX(25%)
+
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev
+    transform: translateX(-25%)
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start
+  transform: translateX(0)
